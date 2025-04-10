@@ -7,6 +7,7 @@
 #import random to help choose a word
 import random
 
+# Define a function to pick a random word from a list and return it in lowercase.
 def chooseWord():
     words = ["Hello", "Welcome", "To", "Our", "Hangman", "Game" ]
     gameWord = random.choice(words)
