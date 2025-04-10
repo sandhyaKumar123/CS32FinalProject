@@ -79,3 +79,6 @@ if __name__ == "__main__":
 #Create a visual of our hangman
 #generate a client server option for multiple players
 
+choosewords function to csv file of smth online
+
+
