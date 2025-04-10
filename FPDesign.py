@@ -18,8 +18,8 @@ def updateWord (displayWord, gameWord, letter): #takes parameter word and letter
     output = '' # start with empty string that builds up to new version of the word
     for i in range(len(gameWord)): #add letter to word output if guessed correctly # go thru each position of the word, one letter at a time
         if displayWord[i] == '-': # only update the dash positions, and ignore already revealed letters
-            if gameWord[i] == letter:
-                output += letter
+            if gameWord[i] == letter: # if teh guessed letter matches teh letter at that position, reveal it
+                output += letter # add the correct letter or match, depending on the dash 
             else: #add dash for letters not guessed
                 output+="-"
         else:
