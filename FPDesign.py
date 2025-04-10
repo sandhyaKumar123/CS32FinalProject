@@ -62,13 +62,13 @@ def hangman():
             if "-" not in displayWord: # If there are no more dashes left (all letters guessed), announce victory and exit the loop.
                 print("Congratulations! You guessed the word!") #check to see if the display is all letters, that means the game is over
                 break
-        else:
+        else: # If the guess is wrong:
             bodyParts.append(bodyPartsRemaining[0]) #change our list of body parts remaining
             bodyPartsRemaining.pop(0) #remove the body part used
             print(f"Incorrect guess. Your hangman has a: " + str(bodyParts)) #pront out the body parts the hangman has
-            if len(bodyPartsRemaining) == 0:
+            if len(bodyPartsRemaining) == 0: # If no body parts are left, end the game by setting play to False.
                 play = False
-    if play == False:
+    if play == False: # After losing (running out of attempts), reveal what the correct word was.
         print(f"You ran out of attempts. The word was {gameWord}!") #if the hangman is built the game ends
 
 if __name__ == "__main__":
