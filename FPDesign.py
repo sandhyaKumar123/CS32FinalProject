@@ -11,7 +11,7 @@ import random
 def chooseWord():
     words = ["Hello", "Welcome", "To", "Our", "Hangman", "Game" ] # create a list of words they can choose from
     gameWord = random.choice(words) # choose one of the words randomly
-    return gameWord.lower() # convert the word to lowercase so that an inputted capital or lowercase doesn't cause problems 
+    return gameWord.lower() # convert the word to lowercase so that an inputted capital or lowercase doesn't cause problems
 
 #function to update if a letter in the word was guessed
 def updateWord (displayWord, gameWord, letter): #takes parameter word and letter
