@@ -39,10 +39,10 @@ def hangman():
 
 
     print("+++ WELCOME TO HANGMAN +++")
-    displayWord = '-'*len(gameWord) #output of our word
-    print(displayWord) #header
+    displayWord = '-'*len(gameWord) #output of our word.... Create displayWord made of dashes, one for each letter in the word.
+    print(displayWord) # Show the dashed word so the player knows how many letters they’re trying to guess.
 
-    while play: #while we are still playing the game
+    while play: #while we are still playing the game... Start a loop that repeats asking for guesses until the game is won or lost; input is always forced to lowercase.
         guess = input("Guess a letter: ").lower()
 
         if guess.isalpha() == False: #check to see if input is letter or probe further
