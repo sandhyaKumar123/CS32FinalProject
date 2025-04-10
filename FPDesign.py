@@ -79,9 +79,9 @@ if __name__ == "__main__":
 #Create a visual of our hangman
 #generate a client server option for multiple players
 
-# choosewords function to csv file or server of smth online... so that theres
+# choosewords function to file or server of smth online... so that theres more words they can choose from
 
-# now we have list of body parts using -- but isntead of listing them, we'll use them as keys in a dictionary to have a betterv isual outptu
+# now we have list of body parts using -- but isntead of listing them, we'll use them as keys in a dictionary to have a better visual outptu
 
 # well split into client and server to have a mutliplayer game
 
