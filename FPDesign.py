@@ -14,10 +14,10 @@ def chooseWord():
     return gameWord.lower() # convert the word to lowercase so that an inputted capital or lowercase doesn't cause problems
 
 #function to update if a letter in the word was guessed
-def updateWord (displayWord, gameWord, letter): #takes parameter word and letter
-    output = ''
-    for i in range(len(gameWord)): #add letter to word output if guessed correctly
-        if displayWord[i] == '-':
+def updateWord (displayWord, gameWord, letter): #takes parameter word and letter ... updates hidden word display when the player makes a correct guess
+    output = '' # start with empty string that builds up to new version of the word
+    for i in range(len(gameWord)): #add letter to word output if guessed correctly # go thru each position of the word, one letter at a time
+        if displayWord[i] == '-': # only update the dash positions, and ignore already revealed letters
             if gameWord[i] == letter:
                 output += letter
             else: #add dash for letters not guessed
