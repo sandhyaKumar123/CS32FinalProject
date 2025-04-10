@@ -45,7 +45,7 @@ def hangman():
     while play: #while we are still playing the game... Start a loop that repeats asking for guesses until the game is won or lost; input is always forced to lowercase.
         guess = input("Guess a letter: ").lower()
 
-        if guess.isalpha() == False: #check to see if input is letter or probe further
+        if guess.isalpha() == False: #check to see if input is letter or probe further ... If the input isn’t alphabetical (e.g., numbers or punctuation), tell the player and skip the rest of the loop.
             print("Please enter a single letter.")
             continue
 
