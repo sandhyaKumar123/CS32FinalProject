@@ -19,23 +19,23 @@ def updateWord (displayWord, gameWord, letter): #takes parameter word and letter
     for i in range(len(gameWord)): #add letter to word output if guessed correctly # go thru each position of the word, one letter at a time
         if displayWord[i] == '-': # only update the dash positions, and ignore already revealed letters
             if gameWord[i] == letter: # if teh guessed letter matches teh letter at that position, reveal it
-                output += letter # add the correct letter or match, depending on the dash 
+                output += letter # add the correct letter or dash, depedning on the match
             else: #add dash for letters not guessed
-                output+="-"
+                output+="-" or # dash, depedning on the match
         else:
             output +=displayWord[i]
-    return output
+    return output # return the updated dispaly string
 
 #Once we have our word, we want the Hangman game to take in a set number of responses
 #For our final project we want to incorporate an illustration, but for now we will use words
 
-#define our hangmnan game
+#define our hangmnan game...
 def hangman():
-    gameWord = chooseWord() #define our word
-    guessedLetters = [] #keep a reccord of letters already guessed
-    play = True #variable telling us to play or not play
-    bodyParts = []
-    bodyPartsRemaining = ["Head", "Body", "Left Arm", "Right Arm", "Left Leg", "Right Leg"]
+    gameWord = chooseWord() #define our word using the chooseword function
+    guessedLetters = [] #keep a reccord of letters already guessed to avoid repeats
+    play = True #variable telling us to play or not play... keeps the game running (True) or stops it (False).
+    bodyParts = [] # list of parts already added to the hangman
+    bodyPartsRemaining = ["Head", "Body", "Left Arm", "Right Arm", "Left Leg", "Right Leg"] # list of parts still left before losing
 
 
     print("+++ WELCOME TO HANGMAN +++")
