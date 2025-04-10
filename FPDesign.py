@@ -57,9 +57,9 @@ def hangman():
 
         if guess in gameWord: #if the letter is in our guessed word
             print("Good guess! This letter is in the word!")
-            displayWord = updateWord(displayWord,gameWord, guess) #update the output
+            displayWord = updateWord(displayWord,gameWord, guess) #update the output... Call updateWord() to reveal all spots where the letter belongs.
             print(displayWord) #print the updated dashed output
-            if "-" not in displayWord:
+            if "-" not in displayWord: # If there are no more dashes left (all letters guessed), announce victory and exit the loop.
                 print("Congratulations! You guessed the word!") #check to see if the display is all letters, that means the game is over
                 break
         else:
