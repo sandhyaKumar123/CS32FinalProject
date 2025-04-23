@@ -11,7 +11,7 @@ FPClient: A multiplayer Hangman game, where this player is the one guessing lett
 
 FPServer: A multiplayer Hangman game, where this player is the one choosing the word.
 
-PlayHangman: A script to setup single player or nultiplayer game options. For multiplayer
+PlayHangman: A script to setup single player or multiplayer game options. For multiplayer
 you would need to run the client or server as specified in a seperate window.
 
 Images is a folder of the visual output. We would like to try and make this a GUI that updates. This seems difficult on GitHub though!
