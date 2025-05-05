@@ -3,6 +3,7 @@
 #Create a list of words to choose from, and randomly choose one
 #import random to help choose a word
 import random
+from hangmanPrint import printMan
 
 #using an external dictionary
 #use random word
@@ -48,6 +49,7 @@ def showMan(part, step):
     output_path = f'{output_folder}/hangman_step{step}.png'
     image.save(output_path)
     print(f"Saved hangman image: {output_path}")
+    printMan(step)
     image.show()
 
 #a function that will clear the images folder
